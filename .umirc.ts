@@ -5,11 +5,8 @@ export default defineConfig({
   // publicPath: "/docs/", // 本地
   base: "/codeCGame", // githubpages
   publicPath: "/codeCGame/", // githubpages
-  // base: "/typeCGame",
-  // publicPath: "https://lr580.github.io/typeCGame/", // github page
   title: "打字练习",
-  // outputPath: 'docs',
-  outputPath: 'build',
+  outputPath: 'docs',
   routes: [
     { path: "/", component: "App" }
   ],
