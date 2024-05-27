@@ -48,3 +48,5 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          path: ${{ steps.build_site.outputs.artifacts-path }}
