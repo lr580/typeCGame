@@ -1,7 +1,7 @@
 import { defineConfig } from "umi";
 
 export default defineConfig({
-  base: "/",
+  base: "/typeCGame",
   // base: "/docs", // 本地
   // publicPath: "/docs/", // 本地
   publicPath: "https://lr580.github.io/typeCGame/", // github page
