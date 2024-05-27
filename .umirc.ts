@@ -5,7 +5,7 @@ export default defineConfig({
   // publicPath: "/docs/", // 本地
   base: "/typeCGame", // githubpages
   publicPath: "/typeCGame/", // githubpages
-  title: "打字练习",
+  title: "三金打字",
   outputPath: 'docs',
   routes: [
     { path: "/", component: "App" }
