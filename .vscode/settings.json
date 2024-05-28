@@ -1,3 +1,7 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "yaml.schemas": {
+        "file:///c%3A/Users/lr580/.vscode/extensions/docsmsft.docs-yaml-1.0.4/dist/toc.schema.json": "/toc\\.yml/i",
+        "https://json.schemastore.org/github-workflow.json": "file:///d%3A/_lr580/program/trys/typeCGame/.github/workflows/deploy.yml"
+    }
 }
