@@ -6,8 +6,9 @@
     "build": "umi build",
     "postinstall": "umi setup",
     "setup": "umi setup",
-    "start": "npm run dev",
-    "deploy": "gh-pages -d docs"
+    "start": "cross-env DEPLOY_ENV=local umi dev",
+    "deploy": "gh-pages -d docs",
+    "build:local": "cross-env DEPLOY_ENV=local umi build"
   },
   "dependencies": {
     "gh-pages": "^6.1.1",
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
+    "cross-env": "^7.0.3",
     "typescript": "^5.0.3"
   },
   "homepage": "https://lr580.github.io/typeCGame/"

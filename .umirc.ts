@@ -1,10 +1,8 @@
 import { defineConfig } from "umi";
 
 export default defineConfig({
-  // base: "/docs", // 本地
-  // publicPath: "/docs/", // 本地
-  base: "/typeCGame", // githubpages
-  publicPath: "/typeCGame/", // githubpages
+  base: process.env.DEPLOY_ENV === 'local' ? "/docs" : "/typeCGame",
+  publicPath: process.env.DEPLOY_ENV === 'local' ? "/docs/" : "/typeCGame/",
   title: "三金打字",
   outputPath: 'docs',
   routes: [
@@ -12,4 +10,3 @@ export default defineConfig({
   ],
   npmClient: 'yarn',
 });
- 
